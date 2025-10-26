@@ -3,8 +3,8 @@ function checkAnswer(questionId, correctAnswer, event) {
   const result = document.getElementById(`result-${questionId}`);
 
   buttons.forEach((btn, index) => {
-    const choice = String.fromCharCode(65 + index); // A, B, C, D
-    btn.disabled = true; // disable after answering
+    const choice = String.fromCharCode(65 + index); 
+    btn.disabled = true; 
     if (choice === correctAnswer) {
       btn.style.backgroundColor = "green";
     } else {
